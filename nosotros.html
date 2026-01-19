@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discos Insomnia</title>
+  <title>Nosotros</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
@@ -11,8 +12,8 @@
 
 <body>
 
+  <!-- NAVBAR -->
   <header>
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">Insomnia</a>
@@ -24,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="./index.html">Inicio</a>
+              <a class="nav-link" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./producto.html">Productos</a>
@@ -32,36 +33,42 @@
             <li class="nav-item">
               <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
-            <li class="nav-item">
+             <li class="nav-item">
               <a class="nav-link" href="./bandas.html"> Bandas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              <a class="nav-link active" href="./nosotros.html">Nosotros</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- BANNER -->
-    <section class="hero">
-      <div class="hero-overlay">
-        <div class="hero-content">
-          <h1>Disquería Insomnia</h1>
-          <p class="hero-subtitle">Tu música, tu desvelo</p>
-         <p class="hero-text">Artículos para coleccionistas</p>
-         <a href="./bandas.html" class="btn btn-outline-light"> Ver bandas </a>
-        </div>
-      </div>
-    </section>
-
   </header>
- 
-  <!-- FOOTER -->
-  <footer class="nosotros">
+  
+<main class="nosotros-main">
+    <h1>Nosotros</h1>
+    <p>
+      En <strong>Disquería Insomnia</strong> mantenemos viva la tradición de la música física: vinilos, CDs y ediciones especiales que celebran la experiencia de descubrir, coleccionar y escuchar música como se hacía en los clásicos tiempos del rock y metal alternativo.  
+      Nuestro compromiso es difundir bandas under de Argentina y acercarlas a quienes buscan algo más que un simple archivo digital: un vínculo con la música, su historia y su cultura.
+    </p>
+
+    <div class="card-nosotros">
+        <h5>Nuestra Misión</h5>
+        <p>Difundir y preservar la música independiente, ofreciendo a coleccionistas y melómanos productos físicos que conecten con la esencia del rock y metal alternativo.</p>
+    </div>    
+    
+   <div class="card-nosotros">
+      <h5>Nuestra Pasión</h5>
+      <p>Revivir la cultura del vinilo y los CDs, manteniendo viva la magia de buscar, descubrir y disfrutar la música en su forma tangible, con la misma emoción de aquellos años dorados.</p>
+    </div>
+  
+</main>
+
+<footer class="text-center py-3">
     <p>© 2025 Disquería Insomnia</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
