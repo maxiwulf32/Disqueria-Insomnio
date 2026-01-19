@@ -1,16 +1,57 @@
 @use "../utilities/variables" as v;
+@use "../utilities/mediaqueries" as mq;
 
-.nosotros-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:1.5rem;
-    padding:2rem 1rem;
-    background-color:v.$color-fondo2;
-    color:v.$color-texto;
+.nosotros-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  background-color: v.$color-fondo2;
+  color: v.$color-texto;
+  text-align: center;
+
+  h1 {
+    @include mq.responsive-text(1.5rem, 2.5rem, 3rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    @include mq.responsive-text(1.2rem, 1.8rem, 2.2rem);
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    @include mq.responsive-text(1rem, 1.2rem, 1.5rem);
+    line-height: 1.6;
+    max-width: 700px;
+  }
+
+  .card-nosotros {
+    background-color: v.$color-fondo;
+    color: v.$color-texto;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
     text-align: center;
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    &.h1{
-        text-align:center;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
     }
+
+    h3 {
+      @include mq.responsive-text(1.2rem, 1.5rem, 1.8rem);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      @include mq.responsive-text(0.9rem, 1rem, 1.2rem);
+      line-height: 1.5;
+    }
+  }
 }

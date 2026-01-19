@@ -1,35 +1,53 @@
-@use "../utilities/variables" as*;
+@use "../utilities/variables" as v;
+@use "../utilities/mediaqueries" as mq; 
 
-/*  HEADER */
-header{
-    background-color: $color-fondo;
+/* HEADER */
+header {
+  background-color: v.$color-fondo;
 
-    .hero{
-        height:90vh;
-        background-size: cover;
-        background-position: center;
-            .hero-overlay{
-                height:100%;
-                background-color: $color-fondo;
-                align-items: center;
-                display: flex;
-            }
-            .hero-content{
-                padding-top: 150px;
-                color: white;
-                max-width: 600px;
-                margin-left: 5%;
-            }
-                .hero-content h1{
-                    font-size: 3rem;
-                    font-weight: bold;
-                }
-            .hero-subtitle {
-                font-size: 1.5rem;
-                margin-top: 0.5rem;
-            }
-            .hero-text{
-                margin-bottom: 1.5rem;
-            }
+  .hero {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+
+    .hero-overlay {
+      height: 100%;
+      background-color: v.$color-fondo;
+      display: flex;
+      align-items: center;
     }
+
+    .hero-content {
+      padding-top: 80px;
+      color: v.$color-texto;
+      max-width: 600px;
+      margin-left: 5%;
+
+     
+      h1 {
+        @include mq.responsive-text(1.8rem, 2.5rem, 3rem);
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .hero-subtitle {
+        @include mq.responsive-text(1rem, 1.2rem, 1.5rem);
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero-text {
+        @include mq.responsive-text(0.9rem, 1rem, 1.2rem);
+        margin-bottom: 1.5rem;
+      }
+
+      @media (min-width: 768px) {
+        padding-top: 120px;
+      }
+
+      @media (min-width: 1024px) {
+        padding-top: 150px;
+      }
+    }
+  }
 }
