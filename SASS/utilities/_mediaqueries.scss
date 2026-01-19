@@ -1,5 +1,5 @@
 // _mediaqueries.scss
-@use "../utilities/variables" as v;
+@use "/SASS/utilities/variables" as v;
 
 @mixin responsive-text($size-mobile, $size-tablet, $size-desktop) {
   font-size: $size-mobile;
@@ -11,9 +11,4 @@
   @media (min-width: 1024px) {
     font-size: $size-desktop;
   }
-}
-
-// Uso:
-h1 {
-  @include responsive-text(1.8rem, 2.5rem, 3rem);
 }
