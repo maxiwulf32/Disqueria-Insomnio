@@ -1,0 +1,31 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+@use "../utilities/extend" as e;
+
+
+/* Productos Cards*/
+.card-hover{
+    @include m.hover-card;
+}
+
+/*card banda*/
+
+.banda-card{
+    @include m.hover-card;
+}
+
+.card-nosotros{
+     @extend %card-base;
+     box-shadow: v.$sombra;
+     text-align: center;
+     max-width: 500px;
+
+     @include m.hover-card;
+    
+
+    &:hover{
+        transform: translateY(-5px);
+        box-shadow:v.$sombra;
+    }
+
+}

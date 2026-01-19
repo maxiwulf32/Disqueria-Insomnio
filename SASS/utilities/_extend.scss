@@ -1,0 +1,9 @@
+@use "./variables" as v;
+
+/* EXTEND */
+%card-base {
+  background-color: v.$color-fondo;
+  color: v.$color-texto;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}

@@ -1,0 +1,18 @@
+@use "../utilities/variables" as v;
+/*banner contacto*/
+.banner{
+    text-align: center;
+
+    .banner-contacto{
+         text-align:center;
+         color:v.$color-texto;
+    }
+
+    h2{
+        color:v.$color-texto;
+    }
+   
+    p{
+        color:v.$color-texto;
+    }
+}

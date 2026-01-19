@@ -1,0 +1,11 @@
+@use "./variables" as v;
+
+/* MIXIN */
+@mixin hover-card {
+  transition:v.$transicion;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: v.$sombra;
+  }
+}
